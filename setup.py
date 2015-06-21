@@ -14,12 +14,15 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 #
-import os
 from setuptools import setup
 
 
-with open('requirements.txt') as f:
-    required_packages = f.read().splitlines()
+required_packages = [
+    "easydict",
+    "psutil",
+    "PyMySQL",
+    "termcolor",
+]
 
 setup(
     name='mysqltuner',
