@@ -1,2 +1,1 @@
-simplemysql
-ConfigParser
+PyMySQL
