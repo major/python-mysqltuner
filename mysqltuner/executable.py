@@ -1,29 +1,39 @@
 #!/usr/bin/env python
+import psutil
 import pymysql
+from pprint import pprint
+
+
+from . import mysqltuner
 
 
 def run_mysqltuner():
 
-  db_creds = {
-    'host': 'localhost',
-    'user': 'root',
-  }
+  m = mysqltuner.MysqlTuner()
 
-  conn = pymysql.connect(**db_creds)
+  # db_creds = {
+  #   'host': 'localhost',
+  #   'user': 'root',
+  # }
 
-  cur = conn.cursor()
+  # conn = pymysql.connect(**db_creds)
 
-  queries = [
-    "SHOW /*!50000 GLOBAL */ VARIABLES",
-    "SHOW /*!50000 GLOBAL */ STATUS"
-  ]
+  # cur = conn.cursor()
 
-  for query in queries:
-    cur.execute(query)
+  # queries = [
+  #   "SHOW /*!50000 GLOBAL */ VARIABLES",
+  #   "SHOW /*!50000 GLOBAL */ STATUS"
+  # ]
 
-    for row in cur:
-      print(row)
+  # for query in queries:
+  #   cur.execute(query)
+
+  #   for row in cur:
+  #     print(row)
 
 
-  cur.close()
-  conn.close()
+  # cur.close()
+  # conn.close()
+
+  # pprint(psutil.virtual_memory())
+  # pprint(psutil.swap_memory())

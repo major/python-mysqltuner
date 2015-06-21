@@ -1,1 +1,4 @@
+easydict
+psutil
 PyMySQL
+termcolor
