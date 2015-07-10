@@ -1,4 +1,4 @@
-## MySQLTuner
+## MySQLTuner (python)
 
 ![Travis-CI Status](https://travis-ci.org/pyca/cryptography.svg?branch=master)
 
