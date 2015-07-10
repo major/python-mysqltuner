@@ -18,6 +18,7 @@ from setuptools import setup
 
 
 required_packages = [
+    "click",
     "easydict",
     "psutil",
     "PyMySQL",

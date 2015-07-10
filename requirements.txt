@@ -1,3 +1,4 @@
+click
 easydict
 psutil
 PyMySQL
