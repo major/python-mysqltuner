@@ -12,6 +12,10 @@ matrix:
       env: TOXENV=py34
     - python: "pypy"
       env: TOXENV=pypy
+    - python: "pep8"
+      env: TOXENV=pep8
+    - python: "py3pep8"
+      env: TOXENV=py3pep8
 before_install:
   pip install codecov
 after_success:
