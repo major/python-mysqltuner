@@ -1,5 +1,6 @@
 from mysqltuner import mysqltuner
 
+
 class TestMysqlTuner(object):
 
     def test_inits(self):

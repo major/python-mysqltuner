@@ -1,5 +1,6 @@
 from mysqltuner import utils
 
+
 class TestUtils(object):
 
     def test_get_ram(self):
