@@ -10,7 +10,7 @@ class TestUtils(object):
     # and psutil returns it as zero bytes.
     def test_get_swap(self):
         swap = utils.get_swap()
-        assert swap => 0
+        assert swap >= 0
 
     def test_get_uptime(self):
         uptime = utils.get_uptime()
