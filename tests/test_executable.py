@@ -10,4 +10,4 @@ class TestExecutable(object):
         runner = CliRunner()
         result = runner.invoke(executable.run_mysqltuner, input='Hello World!\n')
         assert not result.exception
-        assert result.output == 'Running MySQLTuner\n'
+        assert result.output == 'Running MySQLTuner\n' 
